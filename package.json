@@ -1,0 +1,16 @@
+{
+  "name": "blogdemo-api",
+  "version": "1.0.0",
+  "description": "Nblogdemo-api",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Nforcode",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
