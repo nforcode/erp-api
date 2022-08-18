@@ -6,9 +6,9 @@ const middlewares = jsonServer.defaults();
 
 // @see: https://github.com/typicode/json-server/issues/401
 const db = router.db;
-
-const PORT = 3310;
 const jwtSecretKey = "test_key";
+const PORT = server.listen(process.env.PORT || 3000);
+app.listen(port_number);
 
 const ERROR_CODE = {
   INVALID: 1,
