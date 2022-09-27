@@ -101,7 +101,7 @@ server.post("/register", (req, res, next) => {
 
   res.json({
     ok: 1,
-    token: jwt.sign({ id: req.body.id, password }, jwtSecretKey),
+    token: jwt.sign({ id: req.body.id }, jwtSecretKey),
   });
 });
 
@@ -123,7 +123,7 @@ server.post("/login", (req, res, next) => {
 
   return res.json({
     ok: 1,
-    token: jwt.sign({ username, userId: user.id }, jwtSecretKey),
+    token: jwt.sign({ id }, jwtSecretKey),
   });
 });
 
