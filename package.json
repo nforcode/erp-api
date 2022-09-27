@@ -1,7 +1,7 @@
 {
-  "name": "blogdemo-api",
+  "name": "erp-api",
   "version": "1.0.0",
-  "description": "Nblogdemo-api",
+  "description": "erp-api",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
