@@ -23,20 +23,6 @@ const makeError = (code, message) => ({
 
 server.use(middlewares);
 server.use(jsonServer.bodyParser);
-server.use((req, res, next) => {
-  if (req.method !== "POST") return next();
-  if (req.body.id) {
-    res.status(400);
-    return res.json(
-      makeError(
-        ERROR_CODE.INVALID,
-        "id will be generated in server, do not modify it by yourself."
-      )
-    );
-  }
-  req.body.createdAt = Date.now();
-  next();
-});
 
 // 資料驗證
 const validator = (requiredFields) => (req, res, next) => {
