@@ -1,6 +1,6 @@
 {
   "account": [
-    { "id": "SUSER", "password": "", "employeeid": "001", "lock": "N" }
+    { "id": "SUSER", "password": "erp", "employeeid": "001", "lock": "N" }
   ],
   "accessright": [
     {
